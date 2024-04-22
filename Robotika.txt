@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char sup = 'A';
+    cout<<sizeof(sup)<<" byte\n";
+
+enum class wassup{
+    other = 520,
+    something = 50
+};
+
+enum def{
+    john = 200,
+    jeff = 100
+};
+
+enum wassup player = wassup::other;
+enum def player1 = john;
+cout<<(int)(player)<<endl;
+cout<<player1<<endl;
+
+int n = 2;
+switch (n){
+    case 1: return (int)(wassup::other);
+    case 2: return (int)(wassup::something);
+}
+}
